@@ -1,71 +1,75 @@
-# wsl
+# WSL (Windows Subsystem for Linux) コマンドリファレンス
 
-## WSLでVS Codeを開く
-.code
+## 基本操作
 
-PowerShellまたはコマンドプロンプトで実行
-wsl --list --verbose
+### WSLでVS Codeを開く
+code .
 
-または
+## ディストリビューション管理
+
+### インストール済みディストリビューションの確認
+PowerShellまたはコマンドプロンプトで実行  
+wsl --list --verbose  
+または  
 wsl -l -v
 
-例：Ubuntuを削除する場合
-wsl --unregister Ubuntu
-wsl --unregister AlmaLinux-9
-
-特定のディストリビューション名で削除
-wsl --unregister <ディストリビューション名>
-
-利用可能なディストリビューションを確認
+### 利用可能なディストリビューションの確認
 wsl --list --online
 
-特定のディストリビューションをインストール
-wsl --install -d Ubuntu
+### ディストリビューションのインストール
+特定のディストリビューションをインストール  
+wsl --install -d Ubuntu  
+wsl --install -d Ubuntu-22.04  
+wsl --install -d Ubuntu-20.04  
+wsl --install -d Debian  
 wsl --install -d AlmaLinux-9
 
-または
-wsl --install -d Ubuntu-22.04
+### ディストリビューションの削除
+特定のディストリビューションを削除  
+wsl --unregister <ディストリビューション名>
 
-WSLを完全にシャットダウン
+例：  
+wsl --unregister Ubuntu  
+wsl --unregister AlmaLinux-9
+
+## WSLシステム管理
+
+### WSLの完全シャットダウン
 wsl --shutdown
 
-すべてのディストリビューションを確認して削除
-wsl -l -v
-
-各ディストリビューションに対して
-wsl --unregister <名前>
-
-WSLを再インストール
+### WSLの再インストール
 wsl --install
 
-インストール済みのディストリビューション一覧を表示
-wsl -l -v
-
-WSLのバージョン情報を表示
+### WSLバージョン情報の表示
 wsl --version
 
-インストール済みディストリビューションとそのWSLバージョンを表示
-wsl -l -v
+## WSLバージョン設定
 
-特定のディストリビューションをWSL2に変換
-wsl --set-version Ubuntu-22.04 2
-
-デフォルトのWSLバージョンを設定
+### デフォルトのWSLバージョンを設定
 wsl --set-default-version 2
 
-特定のディストリビューションを起動
-wsl -d Ubuntu-22.04
+### 特定のディストリビューションのWSLバージョンを変更
+wsl --set-version Ubuntu-22.04 2
+
+## ディストリビューションの起動
+
+### 特定のディストリビューションを起動
+wsl -d Ubuntu-22.04  
 wsl -d Debian
 
-デフォルトを変更
+### デフォルトディストリビューションの変更
 wsl --set-default Ubuntu-22.04
 
-その後は単にwslコマンドで起動可能
+### デフォルトディストリビューションの起動
 wsl
 
-利用可能なディストリビューション一覧を表示
-wsl --list --online
+## 完全リセット手順
 
-特定のディストリビューションをインストール
-wsl --install -d Ubuntu-20.04
-wsl --install -d Debian
+1. すべてのディストリビューションを確認  
+   wsl -l -v
+
+2. 各ディストリビューションを削除  
+   wsl --unregister <名前>
+
+3. WSLを再インストール  
+   wsl --install
