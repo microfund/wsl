@@ -11,31 +11,22 @@ code .
 ## ディストリビューション管理
 
 ### インストール済みディストリビューションの確認
-PowerShellまたはコマンドプロンプトで実行  
-wsl --list --verbose  
-または  
 wsl -l -v
 
 ### 利用可能なディストリビューションの確認
 wsl --list --online
 
-### ディストリビューションのインストール
-特定のディストリビューションをインストール  
+### 特定のディストリビューションを削除  
+wsl --unregister <ディストリビューション名> 
+wsl --unregister Ubuntu  
+wsl --unregister AlmaLinux-9
+
+### 特定のディストリビューションをインストール  
 wsl --install -d Ubuntu  
 wsl --install -d Ubuntu-22.04  
 wsl --install -d Ubuntu-20.04  
 wsl --install -d Debian  
 wsl --install -d AlmaLinux-9
-
-### ディストリビューションの削除
-特定のディストリビューションを削除  
-wsl --unregister <ディストリビューション名>
-
-例：  
-wsl --unregister Ubuntu  
-wsl --unregister AlmaLinux-9
-
-## WSLシステム管理
 
 ### WSLの完全シャットダウン
 wsl --shutdown
@@ -45,8 +36,6 @@ wsl --install
 
 ### WSLバージョン情報の表示
 wsl --version
-
-## WSLバージョン設定
 
 ### デフォルトのWSLバージョンを設定
 wsl --set-default-version 2
