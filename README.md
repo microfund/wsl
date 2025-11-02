@@ -1,4 +1,7 @@
-# WSL (Windows Subsystem for Linux) コマンドリファレンス
+# WSL (Windows Subsystem for Linux) の使い方
+
+## wslで利用可能なosを表示する方法
+
 
 ## GitHub
 https://github.com/microfund/wsl
