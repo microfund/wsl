@@ -17,14 +17,14 @@ $ cd ~
 code .
 ```
 
-### インストール済みのディストリビューションを確認する
+### インストール済みのOSを確認する
 ```
 PS C:\Users\user> wsl -l -v
   NAME           STATE           VERSION
 * AlmaLinux-9    Running         2
 ```
 
-### インストール可能なディストリビューションを確認する
+### インストール可能なOSを確認する
 ```
 PS C:\Users\user> wsl --list --online
 インストールできる有効なディストリビューションの一覧を次に示します。
