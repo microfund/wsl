@@ -27,8 +27,6 @@ PS C:\Users\user> wsl -l -v
 ### インストール可能なOSを確認する
 ```
 PS C:\Users\user> wsl --list --online
-インストールできる有効なディストリビューションの一覧を次に示します。
-'wsl.exe --install <Distro>' を使用してインストールします。
 
 NAME                            FRIENDLY NAME
 AlmaLinux-8                     AlmaLinux OS 8
@@ -54,20 +52,24 @@ OracleLinux_9_5                 Oracle Linux 9.5
 openSUSE-Leap-15.6              openSUSE Leap 15.6
 ```
 
-### 特定のディストリビューションを削除  
-wsl --unregister <ディストリビューション名> 
-wsl --unregister Ubuntu  
-wsl --unregister AlmaLinux-9
-
-### 特定のディストリビューションをインストール  
-wsl --install -d Ubuntu  
+### 特定のOSをインストールする  
+```
+wsl --install -d AlmaLinux-9
 wsl --install -d Ubuntu-22.04  
 wsl --install -d Ubuntu-20.04  
 wsl --install -d Debian  
-wsl --install -d AlmaLinux-9
+```
 
-### WSLの完全シャットダウン
+### 特定のOSを削除する
+```
+wsl --unregister <OS名> 
+wsl --unregister AlmaLinux-9
+```
+
+### WSLをシャットダウンする
+```
 wsl --shutdown
+```
 
 ### WSLの再インストール
 wsl --install
