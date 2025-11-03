@@ -17,7 +17,7 @@ $ cd ~
 code .
 ```
 
-### インストール済みディストリビューションの確認
+### インストール済みのディストリビューションを確認する
 ```
 PS C:\Users\user> wsl -l -v
   NAME           STATE           VERSION
