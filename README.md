@@ -1,4 +1,4 @@
-# WSL (Windows Subsystem for Linux) の使い方
+# WSLの使い方 (Windows Subsystem for Linux) 
 
 ### WSLを起動する
 * PowerShellを起動する
