@@ -1,8 +1,8 @@
 ## WSLの使い方 (Windows Subsystem for Linux) 
 
 ### WSLを起動する
-* PowerShellを起動する
-* wslとコマンドを打つ
+1. PowerShellを起動する
+2. wslとコマンドを打つ
 ```
 PS C:\Users\user> wsl
 ```
