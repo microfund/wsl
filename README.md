@@ -24,8 +24,10 @@ PS C:\Users\user> wsl -l -v
 * AlmaLinux-9    Running         2
 ```
 
-### 利用可能なディストリビューションの確認
+### 利用可能なディストリビューションを確認する
+```
 wsl --list --online
+```
 
 ### 特定のディストリビューションを削除  
 wsl --unregister <ディストリビューション名> 
