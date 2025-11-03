@@ -1,8 +1,16 @@
-# WSLの使い方 (Windows Subsystem for Linux) 
+## WSLの使い方 (Windows Subsystem for Linux) 
 
 ### WSLを起動する
 * PowerShellを起動する
 * wslとコマンドを打つ
+```
+PS C:\Users\user> wsl
+```
+
+### windowsからlinuxへ移動する
+```
+$ cd ~
+```
 
 ## wslで利用可能なosを表示する方法
 
