@@ -12,17 +12,17 @@ PS C:\Users\user> wsl
 $ cd ~
 ```
 
-## wslで利用可能なosを表示する方法
-
-## 基本操作
-
 ### WSLでVS Codeを開く
+```
 code .
-
-## ディストリビューション管理
+```
 
 ### インストール済みディストリビューションの確認
-wsl -l -v
+```
+PS C:\Users\user> wsl -l -v
+  NAME           STATE           VERSION
+* AlmaLinux-9    Running         2
+```
 
 ### 利用可能なディストリビューションの確認
 wsl --list --online
