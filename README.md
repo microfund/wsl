@@ -1,10 +1,10 @@
 # WSL (Windows Subsystem for Linux) の使い方
 
+### WSLを起動する
+* PowerShellを起動する
+* wslとコマンドを打つ
+
 ## wslで利用可能なosを表示する方法
-
-
-## GitHub
-https://github.com/microfund/wsl
 
 ## 基本操作
 
